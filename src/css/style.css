@@ -85,6 +85,10 @@ button:hover {
   width: 100%;
 }
 
+#banner-install:hover{
+  cursor: pointer;
+}
+
 /* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
     header {
