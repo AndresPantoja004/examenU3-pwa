@@ -88,6 +88,75 @@ button:hover {
 #banner-install:hover{
   cursor: pointer;
 }
+/* Estilos generales */
+.page-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4a148c;
+}
+
+/* Imagen responsive */
+.container-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.container-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto */
+.page-content p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Media queries para responsive */
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .page-content {
+    padding: 15px;
+  }
+
+  .page-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .page-content {
+    padding: 10px;
+  }
+
+  .container-image img {
+    border-radius: 5px;
+  }
+
+  .page-content p {
+    font-size: 0.95rem;
+  }
+}
+
 
 /* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
