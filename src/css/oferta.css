@@ -1,0 +1,73 @@
+/* Contenedor general */
+.page-content {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #222;
+}
+
+/* Títulos */
+.page-content h2 {
+  font-size: 2.2rem;
+  color: #512da8; /* morado oscuro */
+  margin-bottom: 20px;
+  font-weight: 700;
+  border-bottom: 3px solid #ffca28; /* amarillo dorado */
+  padding-bottom: 8px;
+}
+
+/* Párrafo introductorio */
+.page-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Sección de carreras */
+.carreras {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Cada carrera */
+.carrera {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgb(81 45 168 / 0.15);
+  padding: 20px 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+/* Efecto hover */
+.carrera:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgb(81 45 168 / 0.3);
+}
+
+/* Título de carrera */
+.carrera h3 {
+  font-size: 1.5rem;
+  color: #311b92; /* morado más oscuro */
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+/* Descripción */
+.carrera p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .page-content {
+    padding: 0 10px;
+  }
+  .carreras {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "pwa-boilerplate",
+  "version": "1.0.0",
+  "main": "sw.js",
+  "scripts": {
+    "dev": "live-server",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "serve": "http-server -c-1",
+    "start": "http-server -c-1 ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.3.0",
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2",
+    "prettier": "^3.6.2"
+  }
+}

@@ -1,0 +1,89 @@
+.page-content {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #222;
+}
+
+/* Título */
+.page-content h2 {
+  font-size: 2.2rem;
+  color: #512da8; /* morado oscuro */
+  margin-bottom: 20px;
+  font-weight: 700;
+  border-bottom: 3px solid #ffca28; /* amarillo dorado */
+  padding-bottom: 8px;
+}
+
+/* Párrafo introductorio */
+.page-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Lista ordenada de pasos */
+.admission-steps {
+  list-style: none;
+  padding: 0;
+  counter-reset: step-counter;
+}
+
+/* Cada paso */
+.admission-steps li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  background: #f3e5f5; /* morado muy claro */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(81, 45, 168, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.admission-steps li:hover {
+  box-shadow: 0 10px 25px rgba(81, 45, 168, 0.3);
+}
+
+/* Icono del paso */
+.step-icon {
+  background-color: #512da8; /* morado oscuro */
+  color: white;
+  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 20px;
+  box-shadow: 0 4px 10px rgba(81, 45, 168, 0.4);
+}
+
+/* Contenido del paso */
+.step-content h3 {
+  margin: 0 0 6px;
+  color: #311b92; /* morado más oscuro */
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.step-content p {
+  margin: 0;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .admission-steps li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .step-icon {
+    margin-bottom: 10px;
+  }
+}
