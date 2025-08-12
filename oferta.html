@@ -1,108 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Estilos y Material Design -->
-  <link rel="stylesheet" href="./src/css/style.css" />
-  <link rel="stylesheet" href="./src/css/oferta.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-amber.min.css" />
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- Estilos y Material Design -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/oferta.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.deep_purple-amber.min.css"
+    />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
-  <!-- Manifest y iconos -->
-  <link rel="manifest" href="./manifest.json" />
-  <meta name="theme-color" content="#673ab7" />
-  <link rel="apple-touch-icon" href="./assets/icons/icon-144x144.png" />
-  <link rel="icon" sizes="512x512" href="./assets/icons/icon-512x512.png" />
+    <!-- Manifest y iconos -->
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#673ab7" />
+    <link rel="apple-touch-icon" href="./assets/icons/icon-144x144.png" />
+    <link rel="icon" sizes="512x512" href="./assets/icons/icon-512x512.png" />
 
-  <title>Oferta Académica - ESPE</title>
-</head>
-<body>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <title>Oferta Académica - ESPE</title>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <!-- HEADER -->
+      <header class="mdl-layout__header mdl-color--deep-purple">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Universidad ESPE</span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="index.html">Inicio</a>
+            <a class="mdl-navigation__link" href="sobre.html">Sobre la ESPE</a>
+            <a
+              class="mdl-navigation__link mdl-navigation__link--current"
+              href="oferta.html"
+              >Oferta Académica</a
+            >
+            <a class="mdl-navigation__link" href="admisiones.html">Admisión</a>
+            <a class="mdl-navigation__link" href="contacto.html">Contacto</a>
+          </nav>
+        </div>
+      </header>
 
-    <!-- HEADER -->
-    <header class="mdl-layout__header mdl-color--deep-purple">
-      <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Universidad ESPE</span>
-        <div class="mdl-layout-spacer"></div>
-        <nav class="mdl-navigation mdl-layout--large-screen-only">
-          <a class="mdl-navigation__link" href="index.html">Inicio</a>
-          <a class="mdl-navigation__link" href="sobre.html">Sobre la ESPE</a>
-          <a class="mdl-navigation__link mdl-navigation__link--current" href="oferta.html">Oferta Académica</a>
-          <a class="mdl-navigation__link" href="admisiones.html">Admisión</a>
-          <a class="mdl-navigation__link" href="contacto.html">Contacto</a>
+      <!-- MENU LATERAL -->
+      <!-- MENU LATERAL -->
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">ESPE PWA</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="index.html">
+            <i class="material-icons mdl-color-text--primary">home</i>
+            Inicio
+          </a>
+          <a class="mdl-navigation__link" href="sobre.html">
+            <i class="material-icons mdl-color-text--primary">school</i>
+            Sobre la ESPE
+          </a>
+          <a class="mdl-navigation__link" href="oferta.html">
+            <i class="material-icons mdl-color-text--primary">menu_book</i>
+            Oferta Académica
+          </a>
+          <a class="mdl-navigation__link" href="admisiones.html">
+            <i class="material-icons mdl-color-text--primary">assignment</i>
+            Admisión
+          </a>
+          <a class="mdl-navigation__link" href="contacto.html">
+            <i class="material-icons mdl-color-text--primary">contact_mail</i>
+            Contacto
+          </a>
+          <div class="mdl-navigation__link app--install" id="banner-install">
+            <i class="material-icons mdl-color-text--primary">get_app</i>
+            Instalar App
+          </div>
         </nav>
       </div>
-    </header>
 
-    <!-- MENU LATERAL -->
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">ESPE PWA</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="index.html">Inicio</a>
-        <a class="mdl-navigation__link" href="sobre.html">Sobre la ESPE</a>
-        <a class="mdl-navigation__link mdl-navigation__link--current" href="oferta.html">Oferta Académica</a>
-        <a class="mdl-navigation__link" href="admisiones.html">Admisión</a>
-        <a class="mdl-navigation__link" href="contacto.html">Contacto</a>
-      </nav>
+      <!-- CONTENIDO PRINCIPAL -->
+      <main class="mdl-layout__content">
+        <div
+          class="page-content"
+          style="padding: 20px; max-width: 900px; margin: auto"
+        >
+          <h2>Oferta Académica</h2>
+          <p>
+            La Universidad de las Fuerzas Armadas - ESPE ofrece una variedad de
+            carreras profesionales que preparan a los estudiantes para enfrentar
+            los retos del mundo moderno.
+          </p>
+
+          <section class="carreras">
+            <article class="carrera">
+              <h3>Ingeniería en Sistemas Computacionales</h3>
+              <p>
+                Esta carrera forma profesionales capaces de diseñar, implementar
+                y gestionar sistemas informáticos eficientes para múltiples
+                industrias.
+              </p>
+            </article>
+
+            <article class="carrera">
+              <h3>Ingeniería en Telecomunicaciones</h3>
+              <p>
+                Enfocada en la tecnología de redes, comunicaciones y desarrollo
+                de infraestructuras para garantizar conectividad segura y
+                estable.
+              </p>
+            </article>
+
+            <article class="carrera">
+              <h3>Ingeniería Ambiental</h3>
+              <p>
+                Prepara a los estudiantes para desarrollar soluciones
+                sustentables que protejan el medio ambiente y promuevan el
+                desarrollo sostenible.
+              </p>
+            </article>
+
+            <article class="carrera">
+              <h3>Administración de Empresas</h3>
+              <p>
+                Formación en gestión, liderazgo y administración para dirigir
+                organizaciones públicas y privadas con éxito.
+              </p>
+            </article>
+          </section>
+        </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer
+        class="mdl-mini-footer mdl-color--deep-purple mdl-color-text--white"
+      >
+        <div class="mdl-mini-footer__left-section">
+          <div class="mdl-logo">ESPE PWA</div>
+          <ul class="mdl-mini-footer__link-list">
+            <li>
+              <a href="https://espe.edu.ec" target="_blank" style="color: white"
+                >Sitio Oficial</a
+              >
+            </li>
+            <li><a href="contacto.html" style="color: white">Contacto</a></li>
+          </ul>
+        </div>
+      </footer>
     </div>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="mdl-layout__content">
-      <div class="page-content" style="padding: 20px; max-width: 900px; margin: auto;">
+    <script src="./src/js/app.js"></script>
 
-        <h2>Oferta Académica</h2>
-        <p>
-          La Universidad de las Fuerzas Armadas - ESPE ofrece una variedad de carreras profesionales que preparan a los estudiantes para enfrentar los retos del mundo moderno.
-        </p>
-
-        <section class="carreras">
-          <article class="carrera">
-            <h3>Ingeniería en Sistemas Computacionales</h3>
-            <p>Esta carrera forma profesionales capaces de diseñar, implementar y gestionar sistemas informáticos eficientes para múltiples industrias.</p>
-          </article>
-
-          <article class="carrera">
-            <h3>Ingeniería en Telecomunicaciones</h3>
-            <p>Enfocada en la tecnología de redes, comunicaciones y desarrollo de infraestructuras para garantizar conectividad segura y estable.</p>
-          </article>
-
-          <article class="carrera">
-            <h3>Ingeniería Ambiental</h3>
-            <p>Prepara a los estudiantes para desarrollar soluciones sustentables que protejan el medio ambiente y promuevan el desarrollo sostenible.</p>
-          </article>
-
-          <article class="carrera">
-            <h3>Administración de Empresas</h3>
-            <p>Formación en gestión, liderazgo y administración para dirigir organizaciones públicas y privadas con éxito.</p>
-          </article>
-        </section>
-
-      </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="mdl-mini-footer mdl-color--deep-purple mdl-color-text--white">
-      <div class="mdl-mini-footer__left-section">
-        <div class="mdl-logo">ESPE PWA</div>
-        <ul class="mdl-mini-footer__link-list">
-          <li><a href="https://espe.edu.ec" target="_blank" style="color:white;">Sitio Oficial</a></li>
-          <li><a href="contacto.html" style="color:white;">Contacto</a></li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-
-  <script src="./src/js/app.js"></script>
-
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("./sw.js")
-        .then(reg => console.log("Service Worker registrado:", reg))
-        .catch(err => console.error("Error al registrar SW:", err));
-    }
-  </script>
-</body>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("./sw.js")
+          .then((reg) => console.log("Service Worker registrado:", reg))
+          .catch((err) => console.error("Error al registrar SW:", err));
+      }
+    </script>
+  </body>
 </html>

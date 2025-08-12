@@ -10,7 +10,14 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-// Manejo básico de navegación por hash (si usas single-page)
+// Instalar PWA
+window.addEventListener("beforeinstallprompt", (e) => {
+  console.log("Evento de install prevenido");
+  e.preventDefault();
+  deferredPrompt = e;
+});
+
+// Manejo básico de navegación por hash 
 const pages = document.querySelectorAll('.page');
 function showHashPage(){
   const hash = location.hash ? location.hash.slice(1) : 'home';
@@ -19,12 +26,17 @@ function showHashPage(){
 window.addEventListener('hashchange', showHashPage);
 showHashPage();
 
-// Manejo del prompt de instalación (opcional)
-let deferredPrompt;
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-  // puedes mostrar un botón para instalar
-  const btn = document.querySelector('.install-btn');
-  if (btn) btn.style.display = 'inline-block';
+window.addEventListener('load', async () => {
+  const bannerInstall = document.querySelector("#banner-install");
+  bannerInstall.addEventListener('click', async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      const res = await deferredPrompt.userChoice;
+      if (res.outcome == 'accepted') {
+        console.log("Usuario aceptó la instalación del prompt");
+      } else {
+        console.log('Rechazó la instalación');
+      }
+    }
+  });
 });
